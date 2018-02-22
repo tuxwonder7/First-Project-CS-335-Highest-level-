@@ -11,26 +11,26 @@
 # Instructions:
 # If you create other files, you need to modify this makefile.
 #
-# Type  make to build the executable, which is named project1
+# Type  make to build the executable, which is named Project1
 # Type make clean to remove all .o files
-# Type make cleanall to remove all .o files and the project1 executable.
+# Type make cleanall to remove all .o files and the Project1 executable.
 
 # If you want to force a recompile, type "touch *.cpp" and then "make"
 
 CXX       := /usr/bin/g++
 CXXFLAGS  += -W -g 
 
-all: project1
+all: Project1
 
 .PHONY: clean  cleanall
 clean:
 	rm -f *.o
 
 cleanall:
-	rm -f *.o project1
+	rm -f *.o Project1
 	
-project1:  pseudoserver.o tree.o main.o bitcoin.o
-	$(CXX) $(CXXFLAGS) -o project1  main.o pseudoserver.o tree.o bitcoin.o
+Project1:  pseudoserver.o tree.o main.o bitcoin.o inputHandler.o
+	$(CXX) $(CXXFLAGS) -o Project1  main.o pseudoserver.o tree.o bitcoin.o inputHandler.o
 
 main.o: main.cpp pseudoserver.h tree.h bitcoin.h 
 	$(CXX) $(CXX_FLAGS)  -c main.cpp
@@ -40,3 +40,9 @@ pseudoserver.o: pseudoserver.cpp pseudoserver.h
 
 tree.o: tree.cpp tree.h
 	$(CXX) $(CXX_FLAGS) -c tree.cpp
+
+bitcoin.o: bitcoin.h
+	$(CXX) $(CXX_FLAGS) -c bitcoin.cpp
+
+inputHandler.o: inputHandler.cpp inputHandler.h
+	$(CXX) $(CXX_FLAGS) -c inputHandler.cpp
