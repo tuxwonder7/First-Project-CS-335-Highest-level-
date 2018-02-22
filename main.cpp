@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include "inputHandler.h"
+
 using namespace std;
 int main(int argc, char* argv[])
 {
@@ -15,10 +16,10 @@ int main(int argc, char* argv[])
 	 stringstream arg3(argv[3]);
 	 if(newCensus.inputVerify(arg1, arg2, arg3)){
 	  cout << "Sucessful" << endl;
-	  newCensus.newCensusSystem();
+	  
 	 } 
+	 newCensus.newCensusSystem();
 	 
-	
 	}
 	else{}
 	

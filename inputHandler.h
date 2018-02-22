@@ -11,6 +11,8 @@
 *******************************************************************************/
 #ifndef inputHandler_h
 #define inputHandler_h
+
+
 #include <sys/stat.h>
 #include <sstream>
 #include <fstream>
@@ -32,9 +34,9 @@ class inputHandler{
 	 oFile >> outputFile;
 	 struct stat outputBuff;
 	  if(stat (outputFile.c_str(), &outputBuff) == 0){ 
-	   ifstream outputFileHandling(outputFile);
-	   if(outputFileHandling.fail())  cerr << "File can not be open/read/used currently, please try again later" << endl; sucessfulHandling = false;
-	   }//Checks if file exists, if it does not it will go through condition
+	    ifstream outputFileHandling(outputFile);
+	    if(outputFileHandling.fail()){ cerr << "File can not be open/read/used currently, please try again later" << endl; sucessfulHandling = false;}
+	  }//Checks if file exists, if it does not it will go through condition
 	  else{ cerr << "File does not exist " << endl; sucessfulHandling = false;}
 
 	 if(!(iV >> specVal)){ cerr << "Invalid value input " << '\n'; sucessfulHandling = false;}
@@ -46,8 +48,8 @@ class inputHandler{
 
 
 	void newCensusSystem(){
-		Bitcoin x(1);
-		
+		Bitcoin mycoin(123);
+		//mycoin();
 	}
 	
 	private:
