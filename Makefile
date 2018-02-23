@@ -40,3 +40,6 @@ pseudoserver.o: pseudoserver.cpp pseudoserver.h
 
 tree.o: tree.cpp tree.h
 	$(CXX) $(CXX_FLAGS) -c tree.cpp
+
+inputHandler.o: inputHandler.cpp inputHandler.h
+	$(CXX) $(CXX_FLAGS) -c inputHandler.cpp
