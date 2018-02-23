@@ -18,6 +18,7 @@
 #include <fstream>
 #include <iostream>
 #include "bitcoin.h"
+#include "pseudoserver.h"
 using namespace std;	
 
 class inputHandler{
@@ -50,6 +51,9 @@ class inputHandler{
 	void newCensusSystem(){
 		Bitcoin mycoin(seedVal);
 		cout << mycoin() << endl;
+		psuedoServer newServer;
+		newServer.push_back("hi");
+		cout << newServer.queuesize() << endl;
 		//if(coin == 0)
 		//calls pseudoserver method to get string from front of queue
 		//if it is empty nothing is done, if it has something then calls tree object, passing string (tree(string))

@@ -29,8 +29,8 @@ clean:
 cleanall:
 	rm -f *.o project1
 	
-project1:  pseudoserver.o tree.o main.o bitcoin.o
-	$(CXX) $(CXXFLAGS) -o project1  main.o pseudoserver.o tree.o bitcoin.o
+project1:  pseudoserver.o tree.o main.o bitcoin.o inputHandler.o queue.o
+	$(CXX) $(CXXFLAGS) -o project1  main.o pseudoserver.o tree.o bitcoin.o inputHandler.o queue.o
 
 main.o: main.cpp pseudoserver.h tree.h bitcoin.h 
 	$(CXX) $(CXX_FLAGS)  -c main.cpp
@@ -43,3 +43,6 @@ tree.o: tree.cpp tree.h
 
 inputHandler.o: inputHandler.cpp inputHandler.h
 	$(CXX) $(CXX_FLAGS) -c inputHandler.cpp
+
+queue.o: queue.cpp queue.h
+	$(CXX) $(CXX_FLAGS) -c queue.cpp

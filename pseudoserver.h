@@ -1,91 +1,30 @@
 #ifndef _pseudoserver_h_
 #define _pseudoserver_h_
+#include "queue.h"
+using namespace std;
 
 class psuedoServer{
 	public:
 	bool read(istream & is);
 	bool extract(string & s);
 	int queuesize();
+	void pop_front();
+	void push_back(string s);
 	private:
-
+	Queue* queue = new Queue();
 };
-
-
-class Node
-{
-public:
-    Node* next;
-    string data;
-};
-
-using namespace std;
-
-class Queue
-{
-public:
-    int length;
-    Node* head;
-
-    Queue();
-    ~Queue();
-    void print();
-    void push_back(string data);
-    void pop_front();
-    bool empty();
-    int size();
-    Node* front();
-    Node* back();
-};
-int Queue::size(){return this->length;}
-bool Queue::empty(){  return (this->length) > 0 ? false : true;}
-Node* Queue::front(){
-    return head;
+int psuedoServer::queuesize(){ return queue->size();}
+bool psuedoServer::extract(string & s){
+	if(queuesize() != 0){
+		s = queue->front()->data;
+		queue->pop_front();
+		return true;
+	}
+	else{
+		return false;
+	}
 }
-Node* Queue::back(){
-   Node* head = this->head;
-    while(head){
-        if(head->next == NULL){
-            return head;
-        }
-        else{ head = head->next; }
-     
-    }  
-}
-
-
-Queue::Queue(){
-    this->length = 0;
-    this->head = NULL;
-}
-Queue::~Queue(){
-    std::cout << "LIST DELETED";
-}
-void Queue::push_back(string data){
-   // cout << data << endl;
-    Node* node = new Node();
-    node->data = data;
-    node->next = this->head;
-    this->head = node;
-    this->length++;
-    
-}
-void Queue::pop_front(){
-    Node* node = new Node();
-    node = head;
-    node = node->next;
-    free(head);
-    head = node;
-    this->length--;
-    
-}
-void Queue::print(){
-    Node* head = this->head;
-    int i = 1;
-    while(head){
-        std::cout << i << ": " << head->data << std::endl;
-        head = head->next;
-        i++;
-    }
-}
+void psuedoServer::pop_front(){ queue->pop_front();}
+void psuedoServer::push_back(string s){ queue->push_back(s);}
 
 #endif
