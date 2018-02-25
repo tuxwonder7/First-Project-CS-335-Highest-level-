@@ -10,6 +10,7 @@ class psuedoServer{
 	int queuesize();
 	void pop_front();
 	void push_back(string s);
+	bool empty();
 	private:
 	Queue* queue = new Queue();
 };
@@ -26,5 +27,5 @@ bool psuedoServer::extract(string & s){
 }
 void psuedoServer::pop_front(){ queue->pop_front();}
 void psuedoServer::push_back(string s){ queue->push_back(s);}
-
+bool psuedoServer::empty(){ if(queuesize() < 1){return true;}else{ return false;}}
 #endif

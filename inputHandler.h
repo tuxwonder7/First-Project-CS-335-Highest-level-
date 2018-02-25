@@ -19,41 +19,95 @@
 #include <iostream>
 #include "bitcoin.h"
 #include "pseudoserver.h"
+#include "tree.h"
 using namespace std;	
 
 class inputHandler{
 	public:
 	inputHandler(){}
 	~inputHandler(){}
-	bool inputVerify(stringstream& iFile,stringstream& oFile, stringstream& iV){ //, stringstream& oFile, stringstream& iV
-	 string inputFile, outputFile;
-	 int specVal;
-         bool sucessfulHandling = false;
+	bool inputVerify(stringstream& iFile,stringstream& oFile, stringstream& iV, bool* sucessfulHandling){ //, stringstream& oFile, stringstream& iV
+	
+	 unsigned int specVal;
+        
 	 iFile >> inputFile;
-	 ifstream inputFileHandling(inputFile.c_str());
-	 if (inputFileHandling.fail()) { cerr << "File could not be found/opened as it most likely doesn't exist in this location/in general" << endl; sucessfulHandling = false;}
-	 oFile >> outputFile;
-	 struct stat outputBuff;
+	 ifstream inputFileHandling;
+	 inputFileHandling.open(inputFile.c_str());
+	 cout << inputFile << " Test23" << endl;
+	 if (inputFileHandling.fail()) { cerr << "File could not be found/opened as it most likely doesn't exist in this location/in general" << endl; 
+	 sucessfulHandling[0] = false;}
+	 else{
+	 //  pushInputFile();
+	   inputFileHandling.close();
+	   if(inputFileHandling.is_open()) cout << "REEE 2" << endl;
+	   inputFileHandling.clear();
+	   if(inputFileHandling.is_open()) cout << "REEE 3" << endl;
+	   sucessfulHandling[0] = true;
+	 }
+	  oFile >> outputFile;
+	  struct stat outputBuff;
 	  if(stat (outputFile.c_str(), &outputBuff) == 0){ 
-	    ifstream outputFileHandling(outputFile.c_str());
-	    if(outputFileHandling.fail()){ cerr << "File can not be open/read/used currently, please try again later" << endl; sucessfulHandling = false;}
+	    fstream outputFileHandling(outputFile.c_str());
+	    if(outputFileHandling.fail()){ cerr << "File can not be open/read/used currently, please try again later" << endl;}
+	    else{ outputFileHandling.close();  outputFileHandling.clear(); sucessfulHandling[1] = true;}
 	  }//Checks if file exists, if it does not it will go through condition
-	  else{ cerr << "File does not exist " << endl; sucessfulHandling = false;}
-
-	 if(!(iV >> specVal)){ cerr << "Invalid value input " << '\n'; sucessfulHandling = false;}
+	  else{ cerr << " Output File does not exist " << endl; }//sucessfulHandling[1] = false;
+	  
+	 if(!(iV >> specVal)){ cerr << "Invalid value input " << '\n'; sucessfulHandling[2] = false;}
 	 seedVal = specVal;
 	 return sucessfulHandling;
 	 
 	}//ifstream outputFileHandling(outputFile.c_str());
 	
 
-
-	void newCensusSystem(){
+	void pushInputFile(ifstream & inStream){
+		
+		
+	}
+	void newCensusSystem(stringstream& iFile,stringstream& oFile, stringstream& iV){
+		
 		Bitcoin mycoin(seedVal);
-		cout << mycoin() << endl;
+		//cout << mycoin() << endl;
 		psuedoServer newServer;
-		newServer.push_back("hi");
-		cout << newServer.queuesize() << endl;
+		//newServer.push_back("hi");
+		//cout << newServer.queuesize() << endl;
+		
+		// int specVal;
+		// iV >> specVal;
+		// cout << inputFile << "  What are you" << endl;;
+		  ifstream inputFileHandling;
+		 
+		  inputFileHandling.open(inputFile.c_str());
+		 //  if(inputFileHandling.is_open()) cout << "REEE 2" << endl;
+		//  string test;
+		//  getline(inputFileHandling, test);
+		//  cout << "test " << test << endl; 
+		 fstream outputFileHandling;
+		 outputFileHandling.open(outputFile.c_str(), ios::out | ios::in | ios::trunc);
+
+
+		// if(inputFileHandling.good()) cout << "Is good\n" << endl;
+		 bool endofFile = false;
+		while(endofFile != true){
+			if(mycoin() == 0){
+			  string treeInfo;
+			 // getline(inputFileHandling, treeInfo);
+			 // cin.ignore();
+			  getline(inputFileHandling, treeInfo);
+			//  cout << "Tree info " << treeInfo << endl;
+			  newServer.push_back(treeInfo);
+			  if(newServer.extract(treeInfo)){
+			   cout << "New tree extract success" << endl;
+			    Tree newTree(treeInfo);
+				
+			  }
+			  else{}
+			}
+			
+		break;
+
+			
+		}
 		//if(coin == 0)
 		//calls pseudoserver method to get string from front of queue
 		//if it is empty nothing is done, if it has something then calls tree object, passing string (tree(string))
@@ -67,8 +121,8 @@ class inputHandler{
 	}
 	
 	private:
-	 //string inputFile;
-	 //string outputFile;
+	 string inputFile;
+	 string outputFile;
 	 int seedVal;
 
 
