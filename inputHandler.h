@@ -101,7 +101,7 @@ class inputHandler{
 			    Tree newTree(treeInfo);
 			  //  cout << "O stream work?" << endl;
 			 //   cout << newTree;
-			    outputFileHandling << newTree.write();	
+			    outputFileHandling << newTree;	
 			  }
 			  else{
 			 //  cout << "newServer.extract(treeInfo) failed " << endl;
@@ -141,7 +141,7 @@ class inputHandler{
 			//   cout << "newServer.extract(treeInfo) failed " << endl;
 				
 			     }
-			if(emptyQueue == 0)emptyQueue++;
+			
 
 		}
 		cout << "average queue size: " << avgQueue << endl;
