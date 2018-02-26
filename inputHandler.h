@@ -33,15 +33,15 @@ class inputHandler{
 	 iFile >> inputFile;
 	 ifstream inputFileHandling;
 	 inputFileHandling.open(inputFile.c_str());
-	 cout << inputFile << " Test23" << endl;
+	// cout << inputFile << " Test23" << endl;
 	 if (inputFileHandling.fail()) { cerr << "File could not be found/opened as it most likely doesn't exist in this location/in general" << endl; 
 	 sucessfulHandling[0] = false;}
 	 else{
 	 //  pushInputFile();
 	   inputFileHandling.close();
-	   if(inputFileHandling.is_open()) cout << "REEE 2" << endl;
+	   if(inputFileHandling.is_open()) //cout << "REEE 2" << endl;
 	   inputFileHandling.clear();
-	   if(inputFileHandling.is_open()) cout << "REEE 3" << endl;
+	   if(inputFileHandling.is_open()) //cout << "REEE 3" << endl;
 	   sucessfulHandling[0] = true;
 	 }
 	  oFile >> outputFile;
@@ -84,30 +84,70 @@ class inputHandler{
 		//  cout << "test " << test << endl; 
 		 fstream outputFileHandling;
 		 outputFileHandling.open(outputFile.c_str(), ios::out | ios::in | ios::trunc);
-
+		double totalQueue = 0, avgQueue = 0, maxQueue = 0, emptyQueue = 0, eofQueue = 0, totalIteration = 0;
 
 		// if(inputFileHandling.good()) cout << "Is good\n" << endl;
 		 bool endofFile = false;
 		while(endofFile != true){
-			if(mycoin() == 0){
-			  string treeInfo;
-			 // getline(inputFileHandling, treeInfo);
-			 // cin.ignore();
-			  getline(inputFileHandling, treeInfo);
-			//  cout << "Tree info " << treeInfo << endl;
-			  newServer.push_back(treeInfo);
+			
+			if(mycoin() == 0){  
+			  // getline(inputFileHandling, treeInfo);
+			  // cin.ignore();  
+			  // cout << "Tree info " << treeInfo << endl;
+			  //newServer.push_back(treeInfo);
+			    string treeInfo;
 			  if(newServer.extract(treeInfo)){
-			   cout << "New tree extract success" << endl;
+			    //cout << "New tree extract success" << endl;
 			    Tree newTree(treeInfo);
-				
+			  //  cout << "O stream work?" << endl;
+			 //   cout << newTree;
+			    outputFileHandling << newTree.write();	
 			  }
-			  else{}
+			  else{
+			 //  cout << "newServer.extract(treeInfo) failed " << endl;
+			   emptyQueue++;
+			      }
+			}
+			else{
+				string treeInfo;
+				getline(inputFileHandling, treeInfo);
+				if(inputFileHandling.bad()  || inputFileHandling.eof()){ endofFile = true; eofQueue = newServer.queuesize(); avgQueue = totalQueue;  break;}
+				else{
+				   newServer.push_back(treeInfo);
+				     
+				   if(newServer.queuesize() > maxQueue) maxQueue = newServer.queuesize();
+				}
 			}
 			
-		break;
-
+			totalQueue+= newServer.queuesize();	 
+			totalIteration++;
 			
 		}
+		//cout << "Avg que and iter" << avgQueue << " " << totalIteration << endl;
+		avgQueue /= totalIteration;
+		 
+		while(newServer.queuesize() != 0){
+			 
+			 string treeInfo;
+			 getline(inputFileHandling, treeInfo);
+			 if(newServer.extract(treeInfo)){
+			  //  cout << "New tree extract success" << endl;
+			    Tree newTree(treeInfo);
+			  //  cout << "O stream work?" << endl;
+			   // cout << newTree;
+			    outputFileHandling << newTree.write();	
+			  }
+			  else{
+			//   cout << "newServer.extract(treeInfo) failed " << endl;
+				
+			     }
+			if(emptyQueue == 0)emptyQueue++;
+
+		}
+		cout << "average queue size: " << avgQueue << endl;
+		cout << "maximum queue size: " << maxQueue << endl;
+		cout << "empty queue count: " << emptyQueue << endl;
+		cout << "queue size on eof: " << eofQueue << endl;
 		//if(coin == 0)
 		//calls pseudoserver method to get string from front of queue
 		//if it is empty nothing is done, if it has something then calls tree object, passing string (tree(string))

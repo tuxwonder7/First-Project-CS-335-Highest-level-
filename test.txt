@@ -1,0 +1,99 @@
+pin oak	200540	21	Alive	Fair	147-074 7 AVENUE	Whitestone	11357	0	0
+red maple	180683	3	Alive	Fair	108-005 70 AVENUE	Forest Hills	11375	0	0
+honeylocust	204026	3	Alive	Good	390 MORGAN AVENUE	Brooklyn	11211	0	0
+honeylocust	190422	11	Alive	Good	8 COLUMBUS AVENUE	New York	10023	0	0
+American linden	189565	21	Alive	Good	603 6 STREET	Brooklyn	11215	0	0
+honeylocust	204337	10	Alive	Good	1027 GRAND STREET	Brooklyn	11211	0	0
+honeylocust	190426	11	Alive	Good	120 WEST 60 STREET	New York	10023	0	0
+honeylocust	209610	6	Alive	Good	65 JEROME AVENUE	Staten Island	10305	0	0
+London planetree	203726	8	Alive	Poor	20-055 24 STREET	Astoria	11105	0	0
+London planetree	203719	11	Alive	Good	20-025 24 STREET	Astoria	11105	0	0
+London planetree	189465	22	Alive	Good	100 WAVERLY AVENUE	Brooklyn	11205	0	0
+London planetree	195202	13	Alive	Fair	35 FENWAY CIRCLE	Staten Island	10308	0	0
+London planetree	192755	21	Alive	Fair	638 AVENUE Z	Brooklyn	11223	0	0
+honeylocust	187311	14	Alive	Fair	No	11373	55	13	0
+honeylocust	161339	14	Alive	Good	1601 CHURCH AVENUE	Brooklyn	11226	0	0
+ginkgo	208201	10	Alive	Good	206 CARLTON AVENUE	Brooklyn	11205	0	0
+honeylocust	193093	11	Alive	Good	367 PROSPECT AVENUE	Brooklyn	11215	0	0
+ginkgo	204208	2	Alive	Fair	8797 25 AVENUE	Brooklyn	11214	0	0
+honeylocust	189834	12	Alive	Good	449 MYRTLE AVENUE	Brooklyn	11205	0	0
+honeylocust	193310	14	Alive	Good	No	170 EAST 75 STREET	0	73	28
+honeylocust	201555	9	Alive	Good	71 STANTON STREET	New York	10002	0	0
+honeylocust	187058	5	Alive	Good	No	10023	1	27	0
+London planetree	204202	12	Alive	Fair	328 THOMAS STREET	Staten Island	10306	0	0
+	211205	0	Stump		21-023 24 DRIVE	Astoria	11102	0	0
+London planetree	208346	20	Alive	Good	418 COLUMBUS AVENUE	New York	10024	0	0
+willow oak	181710	13	Alive	Good	267 WEST END AVENUE	Brooklyn	11235	0	0
+London planetree	201494	24	Alive	Good	6 ALLISON PLACE	Staten Island	10306	0	0
+honeylocust	190425	13	Alive	Good	120 WEST 60 STREET	New York	10023	0	0
+honeylocust	190423	12	Alive	Good	120 WEST 60 STREET	New York	10023	0	0
+London planetree	193690	36	Alive	Good	6018 24 AVENUE	Brooklyn	11230	0	0
+London planetree	196089	29	Alive	Good	84-037 124 STREET	Kew Gardens	11415	0	0
+London planetree	178382	12	Alive	Fair	520 EAST 20 STREET	New York	10009	0	0
+willow oak	191988	6	Alive	Good	73 WEST HOUSTON STREET	New York	10012	0	0
+London planetree	196132	19	Alive	Good	2347 63 STREET	Brooklyn	11204	0	0
+London planetree	196223	17	Alive	Fair	80-025 126 STREET	Kew Gardens	11415	0	0
+London planetree	192888	32	Alive	Fair	No	11229	3778	17	0
+London planetree	192890	28	Alive	Good	No	11229	3782	17	0
+pin oak	197978	7	Alive	Good	160-001 59 AVENUE	Fresh Meadows	11365	0	0
+willow oak	161193	9	Alive	Good	86 BOGOTA STREET	Staten Island	10314	0	0
+willow oak	204413	13	Alive	Good	2435 HARWAY AVENUE	Brooklyn	11214	0	0
+	187807	0	Dead		300 EAST MOSHOLU PARKWAY SOUTH	Bronx	10458	0	0
+pin oak	184317	5	Alive	Good	4634 3 AVENUE	Bronx	10458	0	0
+pin oak	178601	10	Alive	Fair	229 HALES AVENUE	Staten Island	10312	0	0
+pin oak	200225	8	Alive	Good	565 WEST END AVENUE	New York	10024	0	0
+red maple	208974	10	Alive	Good	227 FINLEY AVENUE	Staten Island	10306	0	0
+red maple	198146	6	Alive	Good	189 NIPPON AVENUE	Staten Island	10312	0	0
+red maple	184031	3	Alive	Good	223 EAST 179 STREET	Bronx	10457	0	0
+pin oak	198121	8	Alive	Fair	Yes	10016	100	28	0
+London planetree	208230	13	Alive	Fair	1 WEST 81 STREET	New York	10024	0	0
+London planetree	189339	18	Alive	Good	79 HALL STREET	Brooklyn	11205	0	0
+hedge maple	204355	5	Alive	Good	89 WEST CEDARVIEW AVENUE	Staten Island	10306	0	0
+pin oak	205759	26	Alive	Good	22-048 74 STREET	East Elmhurst	11370	0	0
+pin oak	195252	5	Alive	Good	138 WEST 11 STREET	New York	10011	0	0
+pin oak	201654	10	Alive	Good	299 COLUMBIA STREET	Brooklyn	11231	0	0
+London planetree	186888	15	Alive	Fair	249 EAST MOSHOLU PARKWAY NORTH	Bronx	10467	0	0
+London planetree	200628	25	Alive	Good	147-043 8 AVENUE	Whitestone	11357	0	0
+London planetree	203334	11	Alive	Fair	35-021 79 STREET	Jackson Heights	11372	0	0
+London planetree	196373	13	Alive	Good	54 ALLEN STREET	New York	10002	0	0
+pin oak	198514	18	Alive	Good	1 MORNINGSIDE DRIVE	New York	10025	0	0
+sycamore maple	206435	26	Alive	Good	2438 EAST 7 STREET	Brooklyn	11235	0	0
+American elm	209441	5	Alive	Poor	75 FEATHERBED LANE	Bronx	10453	0	0
+London planetree	196080	36	Alive	Good	No	11415	84	14	0
+American elm	209909	2	Alive	Good	1840 GRAND CONCOURSE	Bronx	10457	0	0
+London planetree	190359	13	Alive	Fair	No	1326 3 AVENUE	0	73	28
+London planetree	208373	4	Alive	Good	390 COLUMBUS AVENUE	New York	10024	0	0
+London planetree	196205	22	Alive	Good	2348 63 STREET	Brooklyn	11204	0	0
+London planetree	208832	3	Alive	Poor	Yes	11205	237	25	0
+London planetree	203718	12	Alive	Good	20-015 24 STREET	Astoria	11105	0	0
+London planetree	203577	26	Alive	Good	No	11375	89	15	0
+London planetree	203386	26	Alive	Good	No	11375	92	15	0
+London planetree	200676	32	Alive	Good	1020 EAST 16 STREET	Brooklyn	11230	0	0
+London planetree	206326	13	Alive	Good	22-058 77 STREET	East Elmhurst	11370	0	0
+London planetree	204118	11	Alive	Good	125 WEST CEDARVIEW AVENUE	Staten Island	10306	0	0
+London planetree	192653	22	Alive	Good	2536 OCEAN PARKWAY	Brooklyn	11223	0	0
+London planetree	196130	24	Alive	Good	No	11204	2327	17	0
+London planetree	189537	18	Alive	Good	53 PROSPECT PARK WEST	Brooklyn	11215	0	0
+London planetree	203592	38	Alive	Good	No	11375	90	15	0
+London planetree	179477	3	Alive	Poor	290 7 AVENUE	Brooklyn	11215	0	0
+London planetree	208240	2	Alive	Good	11 WEST 81 STREET	New York	10024	0	0
+London planetree	189338	18	Alive	Good	88 HALL STREET	Brooklyn	11205	0	0
+Amur maple	193183	3	Alive	Good	75-009 AUSTIN STREET	Forest Hills	11375	0	0
+London planetree	203550	42	Alive	Good	No	11375	90	15	0
+London planetree	192086	28	Alive	Good	8923 RIDGE BOULEVARD	Brooklyn	11209	0	0
+American elm	180295	2	Alive	Good	Yes	10023	13	27	0
+London planetree	203759	16	Alive	Good	24-015 21 AVENUE	Astoria	11105	0	0
+London planetree	203720	9	Alive	Good	20-025 24 STREET	Astoria	11105	0	0
+honeylocust	178659	4	Alive	Good	434 RARITAN AVENUE	Staten Island	10305	0	0
+honeylocust	187056	7	Alive	Good	No	10023	1880	27	0
+honeylocust	184375	3	Alive	Good	2022 LA FONTAINE AVENUE	Bronx	10457	0	0
+honeylocust	189164	7	Alive	Good	456 5 AVENUE	Brooklyn	11215	0	0
+honeylocust	208407	9	Alive	Good	No	11385	1817	12	0
+London planetree	195265	19	Alive	Good	401 AVENUE O	Brooklyn	11230	0	0
+London planetree	192942	33	Alive	Good	No	11415	84	14	0
+Amur maple	205044	5	Alive	Good	134 BAY 40 STREET	Brooklyn	11214	0	0
+willow oak	189700	2	Alive	Good	26 8 AVENUE	Brooklyn	11217	0	0
+sycamore maple	204325	9	Alive	Good	301 THOMAS STREET	Staten Island	10306	0	0
+willow oak	199760	4	Alive	Fair	2163 BROADWAY	New York	10024	0	0
+London planetree	192998	30	Alive	Fair	Yes	11212	2126	20	0
+American linden	208649	9	Alive	Good	311 WEST 50 STREET	New York	10019	0	0
