@@ -88,12 +88,12 @@ London planetree,206326,13,Alive,Good,22-058 77 STREET,East Elmhurst,11370,0,0
 London planetree,192653,22,Alive,Good,2536 OCEAN PARKWAY,Brooklyn,11223,0,0
 London planetree,203592,38,Alive,Good,No,11375,90,15,0
 London planetree,208240,2,Alive,Good,11 WEST 81 STREET,New York,10024,0,0
-London planetree	189338	18	Alive	Good	88 HALL STREET	Brooklyn	11205	0	0
-London planetree	204118	11	Alive	Good	125 WEST CEDARVIEW AVENUE	Staten Island	10306	0	0
-London planetree	200676	32	Alive	Good	1020 EAST 16 STREET	Brooklyn	11230	0	0
-London planetree	201494	24	Alive	Good	6 ALLISON PLACE	Staten Island	10306	0	0
-honeylocust	190425	13	Alive	Good	120 WEST 60 STREET	New York	10023	0	0
-honeylocust	190423	12	Alive	Good	120 WEST 60 STREET	New York	10023	0	0
-honeylocust	187056	7	Alive	Good	No	10023	1880	27	0
-honeylocust	184375	3	Alive	Good	2022 LA FONTAINE AVENUE	Bronx	10457	0	0
-honeylocust	189834	12	Alive	Good	449 MYRTLE AVENUE	Brooklyn	11205	0	0
+London planetree,189338,18,Alive,Good,88 HALL STREET,Brooklyn,11205,0,0
+London planetree,204118,11,Alive,Good,125 WEST CEDARVIEW AVENUE,Staten Island,10306,0,0
+London planetree,200676,32,Alive,Good,1020 EAST 16 STREET,Brooklyn,11230,0,0
+London planetree,201494,24,Alive,Good,6 ALLISON PLACE,Staten Island,10306,0,0
+honeylocust,190425,13,Alive,Good,120 WEST 60 STREET,New York,10023,0,0
+honeylocust,190423,12,Alive,Good,120 WEST 60 STREET,New York,10023,0,0
+honeylocust,187056,7,Alive,Good,No,10023,1880,27,0
+honeylocust,184375,3,Alive,Good,2022 LA FONTAINE AVENUE,Bronx,10457,0,0
+honeylocust,189834,12,Alive,Good,449 MYRTLE AVENUE,Brooklyn,11205,0,0

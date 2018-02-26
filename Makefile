@@ -32,7 +32,7 @@ cleanall:
 project1:  pseudoserver.o tree.o main.o bitcoin.o inputHandler.o queue.o
 	$(CXX) $(CXXFLAGS) -o project1  main.o pseudoserver.o tree.o bitcoin.o inputHandler.o queue.o
 
-main.o: main.cpp pseudoserver.h tree.h bitcoin.h 
+main.o: main.cpp pseudoserver.h tree.h bitcoin.h inputHandler.h queue.h
 	$(CXX) $(CXX_FLAGS)  -c main.cpp
 
 pseudoserver.o: pseudoserver.cpp pseudoserver.h 

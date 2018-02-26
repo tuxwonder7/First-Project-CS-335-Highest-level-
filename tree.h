@@ -17,16 +17,12 @@ class Tree{
 	   string singlePart;
 	   getline(iss,singlePart,',');
 	   splitString.push_back(singlePart);
-	 //  count++;
+	
 	 }
-	 stringstream(splitString[0]) >> tree_id ;//
-	 stringstream(splitString[3]) >> tree_dbh;//
-	// stringstream(splitString[6]) >> status;
-	// stringstream(splitString[7]) >> health;
-	// stringstream(splitString[9]) >> spc_common;
-	// stringstream(splitString[24]) >> address;
-	// stringstream(splitString[26]) >> boroname;
-	 stringstream(splitString[25]) >> zipcode ;//
+	 stringstream(splitString[0]) >> tree_id ;
+	 stringstream(splitString[3]) >> tree_dbh;
+
+	 stringstream(splitString[25]) >> zipcode ;
 	 status = status = splitString[6];
 	 health = splitString[7];
 	 spc_common = splitString[9];
