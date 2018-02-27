@@ -28,7 +28,7 @@ bool inputHandler::inputVerify(stringstream& iFile,stringstream& oFile, stringst
 
 void inputHandler::newCensusSystem(stringstream& iFile,stringstream& oFile, stringstream& iV){
 		 Bitcoin mycoin(seedVal);
-		 psuedoServer newServer;
+		 pseudoServer newServer;
 		 ifstream inputFileHandling;
 		 inputFileHandling.open(inputFile.c_str());
 		 fstream outputFileHandling;

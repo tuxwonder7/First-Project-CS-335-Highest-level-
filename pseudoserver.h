@@ -3,7 +3,7 @@
 #include "queue.h"
 using namespace std;
 
-class psuedoServer{
+class pseudoServer{
 	public:
 	bool read(istream & is){
 	 string treeInfo;
@@ -11,6 +11,7 @@ class psuedoServer{
 	 if(is.bad()  || is.eof()){ return false;}
 	 else{
 	  queue->push_back(treeInfo);
+	  return true;
 	 }
 	}
 	bool extract(string & s);
@@ -21,8 +22,8 @@ class psuedoServer{
 	private:
 	Queue* queue = new Queue();
 };
-int psuedoServer::queuesize(){ return queue->size();}
-bool psuedoServer::extract(string & s){
+int pseudoServer::queuesize(){ return queue->size();}
+bool pseudoServer::extract(string & s){
 	if(queuesize() != 0){
 		s = queue->front()->data;
 		queue->pop_front();
@@ -32,7 +33,7 @@ bool psuedoServer::extract(string & s){
 		return false;
 	}
 }
-void psuedoServer::pop_front(){ queue->pop_front();}
-void psuedoServer::push_back(string s){ queue->push_back(s);}
-bool psuedoServer::empty(){ if(queuesize() < 1){return true;}else{ return false;}}
+void pseudoServer::pop_front(){ queue->pop_front();}
+void pseudoServer::push_back(string s){ queue->push_back(s);}
+bool pseudoServer::empty(){ if(queuesize() < 1){return true;}else{ return false;}}
 #endif
