@@ -47,12 +47,9 @@ void inputHandler::newCensusSystem(stringstream& iFile,stringstream& oFile, stri
 			      }
 			}
 			else{
-				string treeInfo;
-				getline(inputFileHandling, treeInfo);
-				if(inputFileHandling.bad()  || inputFileHandling.eof()){ endofFile = true; eofQueue = newServer.queuesize(); avgQueue = totalQueue;  break;}
-				else{
-				   newServer.push_back(treeInfo);
-				     
+				
+				if(!(newServer.read(inputFileHandling))){ endofFile = true; eofQueue = newServer.queuesize(); avgQueue = totalQueue;  break;}
+				else{     
 				   if(newServer.queuesize() > maxQueue) maxQueue = newServer.queuesize();
 				}
 			}

@@ -5,7 +5,14 @@ using namespace std;
 
 class psuedoServer{
 	public:
-	bool read(istream & is);
+	bool read(istream & is){
+	 string treeInfo;
+	 getline(is, treeInfo);
+	 if(is.bad()  || is.eof()){ return false;}
+	 else{
+	  queue->push_back(treeInfo);
+	 }
+	}
 	bool extract(string & s);
 	int queuesize();
 	void pop_front();
